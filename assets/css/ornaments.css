@@ -7,9 +7,10 @@
 
 /* ===== Base section ===== */
 .section {
-  position: relative;         /* ancre l’ornement en bas */
-  overflow: clip;             /* évite les débordements (Chrome/Safari OK) */
-  padding-block: 3.5rem;      /* ajuste si besoin */
+  position: relative;         /* ancre l'ornement en bas */
+  overflow: hidden;           /* évite les débordements (meilleure compatibilité Safari) */
+  padding-top: 3.5rem;        /* ajuste si besoin */
+  padding-bottom: 3.5rem;     /* ajuste si besoin */
 }
 
 /* ===== Ornement générique en bas de section =====
