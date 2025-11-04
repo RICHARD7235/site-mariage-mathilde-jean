@@ -1,8 +1,8 @@
-/* ===== Couleurs de fond par section ===== */
-.section.accueil      { background: #f2e9dc; } /* beige */
+/* ===== Couleurs de fond par section  #f2ebe1===== */
+.section.accueil      { background: #f2ebe1; } /* beige */
 .section.programme    { background: #ffffff; } /* blanc */
-.section.adresses     { background: #f2e9dc; }
-.section.photos       { background: #f2e9dc; }
+.section.adresses     { background: #f2ebe1; }
+.section.photos       { background: #ffffff; }
 .section.informations { background: #f2e9dc; }
 
 /* ===== Base section ===== */
