@@ -218,29 +218,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-  // 1) Marque automatiquement les sections cibles
-  document.addEventListener('DOMContentLoaded', function () {
-    const ids = ['accueil','programme','adresses','photos','informations'];
-    ids.forEach(id => {
-      const el = document.getElementById(id);
-      if (el) {
-        el.classList.add('section', id, 'has-bottom-ornament');
-      }
-    });
-
-    // 2) Supprime les anciens <img> décoratifs pour éviter les doublons
-    //    (tous ceux qui contiennent "fleurs" dans le src)
-    document.querySelectorAll('img[src*="fleurs"]').forEach(img => {
-      // On ne supprime que si l’image est décorative (pas dans une galerie par ex.)
-      // Heuristique: si l’image est dans une section cible et proche du bas
-      const parentSection = img.closest('#accueil, #programme, #adresses, #photos, #informations');
-      if (parentSection) {
-        img.remove();
-      }
-    });
-  });
-</script>
 
 </body>
 </html>
