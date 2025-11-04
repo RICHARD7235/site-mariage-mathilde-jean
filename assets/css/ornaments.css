@@ -1,0 +1,57 @@
+/* ===== Couleurs de fond par section ===== */
+.section.accueil      { background: #f2e9dc; } /* beige */
+.section.programme    { background: #ffffff; } /* blanc */
+.section.adresses     { background: #f2e9dc; }
+.section.photos       { background: #f2e9dc; }
+.section.informations { background: #f2e9dc; }
+
+/* ===== Base section ===== */
+.section {
+  position: relative;         /* ancre l’ornement en bas */
+  overflow: clip;             /* évite les débordements (Chrome/Safari OK) */
+  padding-block: 3.5rem;      /* ajuste si besoin */
+}
+
+/* ===== Ornement générique en bas de section =====
+   Variables CSS pour piloter l’image + taille
+*/
+.section.has-bottom-ornament {
+  --ornament-height: 180px;        /* ajuste à la taille de tes PNG */
+  --ornament-max-width: 1140px;    /* largeur max souhaitée */
+  padding-bottom: calc(var(--ornament-height) + 2rem);
+}
+
+.section.has-bottom-ornament::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+
+  width: min(100%, var(--ornament-max-width));
+  height: var(--ornament-height);
+
+  background-image: var(--ornament-url);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  pointer-events: none;
+}
+
+/* ===== Routing des images par type de fond =====
+   Beige = fleurs_beige.png ; Blanc = fleurs.png
+   (chemins relatifs pour GitHub Pages)
+*/
+.section.accueil.has-bottom-ornament,
+.section.adresses.has-bottom-ornament,
+.section.photos.has-bottom-ornament,
+.section.informations.has-bottom-ornament {
+  --ornament-url: url("./assets/img/fleurs_beige.png");
+}
+
+.section.programme.has-bottom-ornament {
+  --ornament-url: url("./assets/img/fleurs.png");
+}
+
+/* (Option) Ajuste par section si besoin */
+/* .section.programme.has-bottom-ornament { --ornament-height: 160px; } */
