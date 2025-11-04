@@ -25,17 +25,17 @@
 .section.has-bottom-ornament::after {
   content: "";
   position: absolute;
-  left: 50%;
+  left: 0;
+  right: 0;
   bottom: 0;
-  transform: translateX(-50%);
 
-  width: min(100%, var(--ornament-max-width));
+  width: 100%;
   height: var(--ornament-height);
 
   background-image: var(--ornament-url);
   background-repeat: no-repeat;
   background-position: bottom center;
-  background-size: contain;
+  background-size: 100% 100%;
   pointer-events: none;
 }
 
