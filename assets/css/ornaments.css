@@ -7,9 +7,10 @@
 
 /* ===== Base section ===== */
 .section {
-  position: relative;         /* ancre l’ornement en bas */
-  overflow: clip;             /* évite les débordements (Chrome/Safari OK) */
-  padding-block: 3.5rem;      /* ajuste si besoin */
+  position: relative;         /* ancre l'ornement en bas */
+  overflow: hidden;           /* évite les débordements (meilleure compatibilité Safari) */
+  padding-top: 3.5rem;        /* ajuste si besoin */
+  padding-bottom: 3.5rem;     /* ajuste si besoin */
 }
 
 /* ===== Ornement générique en bas de section =====
@@ -39,18 +40,18 @@
 }
 
 /* ===== Routing des images par type de fond =====
-   Beige = fleurs_beige.png ; Blanc = fleurs.png
-   (chemins relatifs pour GitHub Pages)
+   Beige = fleurs_beige.png ; Blanc = Fleurs.png
+   (chemins relatifs depuis assets/css/)
 */
 .section.accueil.has-bottom-ornament,
 .section.adresses.has-bottom-ornament,
 .section.photos.has-bottom-ornament,
 .section.informations.has-bottom-ornament {
-  --ornament-url: url("./assets/img/fleurs_beige.png");
+  --ornament-url: url("../../images/fleurs_beige.png");
 }
 
 .section.programme.has-bottom-ornament {
-  --ornament-url: url("./assets/img/fleurs.png");
+  --ornament-url: url("../../images/Fleurs.png");
 }
 
 /* (Option) Ajuste par section si besoin */

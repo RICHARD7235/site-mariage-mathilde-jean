@@ -9,6 +9,7 @@
 
 html {
     scroll-padding-top: 120px;
+    -webkit-scroll-behavior: smooth; /* Safari */
     scroll-behavior: smooth;
 }
 
@@ -48,6 +49,9 @@ nav a {
     font-weight: 700;
     font-size: 1.1rem;
     letter-spacing: 0.5px;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
     transition: opacity 0.3s;
     padding: 0.5rem;
     display: inline-block;
@@ -117,13 +121,28 @@ nav a:hover {
 }
 
 .carousel-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    -moz-transition: -moz-transform 0.6s ease-in-out;
+    -o-transition: -o-transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out;
 }
 
 .carousel-slide {
     min-width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 0;
 }
@@ -131,7 +150,10 @@ nav a:hover {
 .carousel-slide img {
     width: calc(100% / 7);
     height: 150px;
+    -o-object-fit: cover;
     object-fit: cover;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
 }
 
@@ -224,14 +246,26 @@ h2 {
 }
 
 .timeline-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 3rem;
     position: relative;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
 }
 
 /* Items à gauche */
 .timeline-item.left {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     text-align: right;
     padding-right: 60px;
@@ -243,6 +277,10 @@ h2 {
 
 /* Items à droite */
 .timeline-item.right {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     text-align: left;
     padding-left: 60px;
@@ -279,8 +317,20 @@ h2 {
     height: 60px;
     border: 2px solid #c1a37f;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: 6rem auto 0;
     font-family: 'Cinzel', serif;
@@ -312,34 +362,68 @@ h2 {
 }
 
 .addresses-grid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 4rem;
     margin-top: 3rem;
     position: relative;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .address-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     gap: 2rem;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 45%;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 45%;
     flex: 0 0 45%;
 }
 
 /* Items à gauche */
 .address-item.left {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     text-align: right;
     padding-right: 60px;
 }
 
 .address-item.left .address-icon {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
 }
 
 /* Items à droite */
 .address-item.right {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     text-align: left;
     padding-left: 60px;
@@ -348,6 +432,8 @@ h2 {
 .address-icon {
     width: 100px;
     height: auto;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
 }
 
