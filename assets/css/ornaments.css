@@ -45,12 +45,12 @@
 */
 .section.accueil.has-bottom-ornament,
 .section.adresses.has-bottom-ornament,
-.section.photos.has-bottom-ornament,
 .section.informations.has-bottom-ornament {
   --ornament-url: url("../../images/fleurs_beige.png");
 }
 
-.section.programme.has-bottom-ornament {
+.section.programme.has-bottom-ornament,
+.section.photos.has-bottom-ornament {
   --ornament-url: url("../../images/Fleurs.png");
 }
 
