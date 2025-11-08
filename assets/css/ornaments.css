@@ -1,9 +1,9 @@
 /* ===== Couleurs de fond par section  #f2ebe1===== */
 .section.accueil      { background: #f2ebe1; } /* beige */
 .section.programme    { background: #ffffff; } /* blanc */
-.section.adresses     { background: #f2ebe1; }
+.section.adresses     { background: #ffffff; } /* blanc */
 .section.photos       { background: #ffffff; }
-.section.informations { background: #f2ebe1; }
+.section.informations { background: #ffffff; } /* blanc */
 
 /* ===== Base section ===== */
 .section {
@@ -43,14 +43,14 @@
    Beige = fleurs_beige.png ; Blanc = Fleurs.png
    (chemins relatifs depuis assets/css/)
 */
-.section.accueil.has-bottom-ornament,
-.section.adresses.has-bottom-ornament,
-.section.informations.has-bottom-ornament {
+.section.accueil.has-bottom-ornament {
   --ornament-url: url("../../images/fleurs_beige.png");
 }
 
 .section.programme.has-bottom-ornament,
-.section.photos.has-bottom-ornament {
+.section.adresses.has-bottom-ornament,
+.section.photos.has-bottom-ornament,
+.section.informations.has-bottom-ornament {
   --ornament-url: url("../../images/Fleurs.png");
 }
 
