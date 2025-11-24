@@ -56,3 +56,23 @@
 
 /* (Option) Ajuste par section si besoin */
 /* .section.programme.has-bottom-ornament { --ornament-height: 160px; } */
+
+/* ===== Responsive - Optimisation mobile ===== */
+@media (max-width: 768px) {
+  .section.has-bottom-ornament {
+    --ornament-height: 100px;
+    padding-bottom: calc(var(--ornament-height) + 1rem);
+  }
+
+  .section.has-bottom-ornament::after {
+    background-size: contain;
+    background-position: bottom center;
+  }
+}
+
+@media (max-width: 480px) {
+  .section.has-bottom-ornament {
+    --ornament-height: 80px;
+    padding-bottom: calc(var(--ornament-height) + 0.5rem);
+  }
+}
