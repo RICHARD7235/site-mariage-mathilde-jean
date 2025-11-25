@@ -558,10 +558,11 @@ footer p {
 
     .name-et {
         width: 80px;
+        margin: -0.5rem auto;
     }
 
     .et-cursive {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .welcome-text {
