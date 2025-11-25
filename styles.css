@@ -116,7 +116,7 @@ nav a:hover {
 
 .et-cursive {
     font-family: 'Brittany Signature Script', 'Great Vibes', cursive;
-    font-size: 2.8rem;
+    font-size: 5rem;
     color: #6a714b;
     display: inline-block;
 }
@@ -561,7 +561,7 @@ footer p {
     }
 
     .et-cursive {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
     }
 
     .welcome-text {
