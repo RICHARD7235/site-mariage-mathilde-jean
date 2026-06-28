@@ -483,6 +483,36 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
+/* Bouton d'accès aux photos (Google Drive) */
+.photos-link {
+    text-align: center;
+    margin: -2.5rem auto 0;
+}
+
+.btn-photos {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #c1a37f;
+    text-decoration: none;
+    padding: 0.9rem 2.6rem;
+    border: 1.5px solid #c1a37f;
+    border-radius: 40px;
+    background-color: transparent;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.btn-photos:hover,
+.btn-photos:focus {
+    background-color: #c1a37f;
+    color: #fff;
+    -webkit-box-shadow: 0 6px 18px rgba(193, 163, 127, 0.35);
+    box-shadow: 0 6px 18px rgba(193, 163, 127, 0.35);
+}
+
 /* Informations */
 .info-section {
     max-width: 900px;
